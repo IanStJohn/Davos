@@ -14,4 +14,14 @@ public class BaseRestController {
     public String hello() {
         return output;
     }
+
+    @GetMapping("/workout")
+    public String workout() {
+        return "Workout";
+    }
+
+    @GetMapping("/fortune")
+    public String fortune() {
+        return "Today is your lucky day.";
+    }
 }
